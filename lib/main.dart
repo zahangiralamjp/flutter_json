@@ -20,9 +20,13 @@ class HomePage extends StatelessWidget {
         future: DefaultAssetBundle.of(context).loadString('/data.json'),
         builder: (context, snapshot) {
           var mydata = json.decode(snapshot.data.toString());
-          return Center(
-            child: Text(mydata['name']),
-          );
+          if (mydata == null) {
+            return Text('Loading');
+          } else {
+            return Center(
+              child: Text(mydata['name']),
+            );
+          }
         },
       ),
     );
