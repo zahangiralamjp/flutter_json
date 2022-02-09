@@ -1,4 +1,10 @@
 {
-    "name" : "Zahangir",
-    "salary" : "3661616"
+    "1" : {
+        "name" : "Zahangir",
+        "salary" : "3661616"
+    },
+    "2" : {
+        "name" : "Imran",
+        "salary" : "366d616"
+    }
 }
