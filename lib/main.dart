@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
             return Text('Loading');
           } else {
             return Center(
-              child: Text(mydata[10]['title']),
+              child: Text(mydata['users'][0]['work']),
             );
           }
         },
